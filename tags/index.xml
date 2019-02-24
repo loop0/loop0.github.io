@@ -7,9 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 24 Feb 2019 13:20:30 -0500</lastBuildDate>
     
 	<atom:link href="https://loop0.sh/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Development</title>
+      <link>https://loop0.sh/tags/development/</link>
+      <pubDate>Sun, 24 Feb 2019 13:20:30 -0500</pubDate>
+      
+      <guid>https://loop0.sh/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wsl</title>
+      <link>https://loop0.sh/tags/wsl/</link>
+      <pubDate>Sun, 24 Feb 2019 13:20:30 -0500</pubDate>
+      
+      <guid>https://loop0.sh/tags/wsl/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

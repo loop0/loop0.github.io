@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://loop0.sh/posts/wsl-setup/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://loop0.sh/tags/development/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://loop0.sh/posts/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://loop0.sh/tags/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://loop0.sh/tags/wsl/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://loop0.sh/</loc>
+    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   

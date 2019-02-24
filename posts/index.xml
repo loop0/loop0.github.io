@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on loop0.sh</title>
+		<link>https://loop0.sh/posts/</link>
+		<description>Recent content in Posts on loop0.sh</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 24 Feb 2019 13:20:30 -0500</lastBuildDate>
+		<atom:link href="https://loop0.sh/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>WSL Setup</title>
+			<link>https://loop0.sh/posts/wsl-setup/</link>
+			<pubDate>Sun, 24 Feb 2019 13:20:30 -0500</pubDate>
+			
+			<guid>https://loop0.sh/posts/wsl-setup/</guid>
+			<description>Set mount umask # /etc/wsl.conf [automount] enabled = true options = &amp;#34;metadata,umask=022&amp;#34; Documentation for the /etc/wsl.conf is *here
+Set ssh-agent 1st: Open powershell as administrator, and run:
+PS C:\&amp;gt; Start-Service ssh-agent PS C:\&amp;gt; Get-Service ssh-agent Status Name DisplayName ------ ---- ----------- Running ssh-agent OpenSSH Authentication Agent 2nd: Add your keys using the ssh-add command at the powershell
+3rd: Download the latest ssh-agent-wsl version (to a windows folder) here
+4th: Uncompress it to a folder of your choice (on windows side): C:\Users\loop0\bin</description>
+			<content type="html"><![CDATA[
+
+<h2 id="set-mount-umask">Set mount umask</h2>
+<div class="highlight"><pre class="chroma"><code class="language-ini" data-lang="ini"><span class="c1"># /etc/wsl.conf</span>
+<span class="k">[automount]</span>
+<span class="na">enabled</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">options</span> <span class="o">=</span> <span class="s">&#34;metadata,umask=022&#34;</span></code></pre></div>
+<p>Documentation for the <code>/etc/wsl.conf</code> is *<a href="https://blogs.msdn.microsoft.com/commandline/2018/02/07/automatically-configuring-wsl/">here</a></p>
+
+<h2 id="set-ssh-agent">Set ssh-agent</h2>
+
+<p><strong>1st</strong>: Open powershell as administrator, and run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\&gt;</span> <span class="nb">Start-Service</span> <span class="n">ssh-agent</span>
+<span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\&gt;</span> <span class="nb">Get-Service</span> <span class="n">ssh-agent</span>
+
+<span class="n">Status</span>   <span class="n">Name</span>               <span class="n">DisplayName</span>
+<span class="p">------</span>   <span class="p">----</span>               <span class="p">-----------</span>
+<span class="n">Running</span>  <span class="n">ssh-agent</span>          <span class="n">OpenSSH</span> <span class="n">Authentication</span> <span class="n">Agent</span></code></pre></div>
+<p><strong>2nd</strong>: Add your keys using the <code>ssh-add</code> command at the powershell</p>
+
+<p><strong>3rd</strong>: Download the latest ssh-agent-wsl version (to a windows folder) <a href="https://github.com/rupor-github/ssh-agent-wsl/releases">here</a></p>
+
+<p><strong>4th</strong>: Uncompress it to a folder of your choice (on windows side): <code>C:\Users\loop0\bin</code></p>
+
+<p><strong>5th</strong>: Add the following to your <code>.bashrc</code> in the WSL user&rsquo;s home</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">eval</span> <span class="k">$(</span>/mnt/c/Users/loop0/bin/ssh-agent-wsl -r<span class="k">)</span></code></pre></div>]]></content>
+		</item>
+		
+	</channel>
+</rss>
