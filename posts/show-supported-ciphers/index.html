@@ -7,7 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="In case you need to check which protocols and ciphers are supported on a HTTPS endpoint you can use nmap for that. Just use the following command, replacing loop0.sh for the desired domain.
-nmap --script ssl-enum-ciphers -p 443 loop0.sh " />
+nmap --script ssl-enum-ciphers -p 443 loop0.sh The previous command should give you an output like this:
+Nmap scan report for loop0.sh (104.24.102.73) Host is up (0.022s latency). Other addresses for loop0.sh (not scanned): 104.24.103.73 2606:4700:3037::6818:6749 2606:4700:3033::6818:6649 PORT STATE SERVICE 443/tcp open https | ssl-enum-ciphers: | TLSv1." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/posts/show-supported-ciphers/" />
@@ -116,6 +117,44 @@ nmap --script ssl-enum-ciphers -p 443 loop0.sh " />
   <div class="post-content"><div>
         <p>In case you need to check which protocols and ciphers are supported on a HTTPS endpoint you can use nmap for that. Just use the following command, replacing <code>loop0.sh</code> for the desired domain.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nmap --script ssl-enum-ciphers -p <span style="color:#ae81ff">443</span> loop0.sh
+</code></pre></div><p>The previous command should give you an output like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Nmap scan report <span style="color:#66d9ef">for</span> loop0.sh <span style="color:#f92672">(</span>104.24.102.73<span style="color:#f92672">)</span>
+Host is up <span style="color:#f92672">(</span>0.022s latency<span style="color:#f92672">)</span>.
+Other addresses <span style="color:#66d9ef">for</span> loop0.sh <span style="color:#f92672">(</span>not scanned<span style="color:#f92672">)</span>: 104.24.103.73 2606:4700:3037::6818:6749 2606:4700:3033::6818:6649
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256-draft <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <span style="color:#f92672">(</span>prime256v1<span style="color:#f92672">)</span> - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|_  least strength: A
+
+Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 5.49 seconds
 </code></pre></div>
       </div></div>
   
