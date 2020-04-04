@@ -1,40 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://loop0.sh/posts/wsl-setup/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
+    <loc>/posts/show-supported-ciphers/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loop0.sh/tags/development/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loop0.sh/posts/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/posts/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loop0.sh/tags/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/security/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loop0.sh/tags/wsl/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loop0.sh/</loc>
-    <lastmod>2019-02-24T13:20:30-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>
