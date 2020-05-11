@@ -6,10 +6,20 @@
     <description>Recent content in Posts on loop0.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to clone a git repository with its submodules</title>
+      <link>/posts/cloning-git-repo-with-submodules/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cloning-git-repo-with-submodules/</guid>
+      <description>This one is pretty simple, you just need to use the --recurse-submodules flag like this:
+git clone --recurse-submodules git@github.com:loop0/website.git </description>
+    </item>
     
     <item>
       <title>How to check supported protocols and ciphers on HTTPS</title>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.68.3" />
+	<meta name="generator" content="Hugo 0.70.0" />
   
     <title>loop0.sh — computer stuff</title>
   
@@ -102,6 +102,41 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/cloning-git-repo-with-submodules/">How to clone a git repository with its submodules</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2020-05-11
+      </span>
+      <span class="post-author">::
+        loop0</span>
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/git/">git</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/cloning-git-repo-with-submodules/">read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/show-supported-ciphers/">How to check supported protocols and ciphers on HTTPS</a></h1>
     <div class="post-meta">
       <span class="post-date">
@@ -123,14 +158,18 @@
 
     <div class="post-content">
       
-      How to check supported protocols and ciphers on HTTPS
+      
+      In case you need to check which protocols and ciphers are supported on a HTTPS endpoint you can use nmap for that. Just use the following command, replacing loop0.sh for the desired domain.
+nmap &ndash;script ssl-enum-ciphers -p 443 loop0.sh The previous command should give you an output like this:
+Nmap scan report for loop0.sh (104.24.102.73) Host is up (0.022s latency). Other addresses for loop0.sh (not scanned): 104.24.103.73 2606:4700:3037::6818:6749 2606:4700:3033::6818:6649 PORT STATE SERVICE 443/tcp open https | ssl-enum-ciphers: | TLSv1.
+      
       
     </div>
 
     
     <div>
       <a class="read-more button"
-        href="/posts/show-supported-ciphers/">reead more →</a>
+        href="/posts/show-supported-ciphers/">read more →</a>
     </div>
     
   </div>

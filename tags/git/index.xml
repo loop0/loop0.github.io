@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on loop0.sh</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on loop0.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to clone a git repository with its submodules</title>
+      <link>/posts/cloning-git-repo-with-submodules/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cloning-git-repo-with-submodules/</guid>
+      <description>This one is pretty simple, you just need to use the --recurse-submodules flag like this:
+git clone --recurse-submodules git@github.com:loop0/website.git </description>
+    </item>
+    
+  </channel>
+</rss>

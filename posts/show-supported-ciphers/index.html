@@ -41,7 +41,9 @@ Nmap scan report for loop0.sh (104.24.102.73) Host is up (0.022s latency). Other
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="How to check supported protocols and ciphers on HTTPS :: loop0.sh">
-<meta property="og:description" content="How to check supported protocols and ciphers on HTTPS" />
+<meta property="og:description" content="In case you need to check which protocols and ciphers are supported on a HTTPS endpoint you can use nmap for that. Just use the following command, replacing loop0.sh for the desired domain.
+nmap --script ssl-enum-ciphers -p 443 loop0.sh The previous command should give you an output like this:
+Nmap scan report for loop0.sh (104.24.102.73) Host is up (0.022s latency). Other addresses for loop0.sh (not scanned): 104.24.103.73 2606:4700:3037::6818:6749 2606:4700:3033::6818:6649 PORT STATE SERVICE 443/tcp open https | ssl-enum-ciphers: | TLSv1." />
 <meta property="og:url" content="/posts/show-supported-ciphers/" />
 <meta property="og:site_name" content="How to check supported protocols and ciphers on HTTPS" />
 
@@ -157,6 +159,27 @@ PORT    STATE SERVICE
 Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 5.49 seconds
 </code></pre></div>
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/posts/cloning-git-repo-with-submodules/">
+                <span class="button__icon">←</span>
+                <span class="button__text">How to clone a git repository with its submodules</span>
+            </a>
+        </span>
+        
+        
+    </div>
+</div>
+
   
 
   
