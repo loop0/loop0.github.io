@@ -6,10 +6,31 @@
     <description>Recent content in Posts on loop0.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compiling coreboot &#43; tianocore for my thinkpad x220</title>
+      <link>/posts/compiling-coreboot-tianocore/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/compiling-coreboot-tianocore/</guid>
+      <description>Recently I flashed coreboot + tianocore into my thinkpad x220 and I was having some issues to compile it on my Fedora 32. So I used docker to run an older version of the ubuntu to make it compile flawlessly.
+Here is what I had to do, so inside my coreboot directory I ran the command:
+docker run -it -v /home/loop0/Code/coreboot-4.12:/coreboot:z ubuntu:18.04 /bin/bash Once inside bash I had to install a few packages:</description>
+    </item>
+    
+    <item>
+      <title>Programatic diagrams with python and mingrammer</title>
+      <link>/posts/creating-diagrams-with-code/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-diagrams-with-code/</guid>
+      <description>Here is a library to make diagrams with python:
+https://diagrams.mingrammer.com/</description>
+    </item>
     
     <item>
       <title>How to clone a git repository with its submodules</title>
